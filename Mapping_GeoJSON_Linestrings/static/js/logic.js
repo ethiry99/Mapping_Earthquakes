@@ -69,7 +69,7 @@ let baseMaps = {
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
   center: [44.0, -80.0],
-  zoom: 2,
+  zoom: 10,
   layers: [light]
 })
 
@@ -77,9 +77,9 @@ let map = L.map('mapid', {
 L.control.layers(baseMaps).addTo(map);
 
 // Accessing the airport GeoJSON URL
-let airportData = "https://raw.githubusercontent.com/ethiry99/Mapping_Earthquakes/Mapping_GeoJSON_Points/Mapping_GeoJSON_Points/static/js/majorAirports.json";
+//let airportData = "https://raw.githubusercontent.com/ethiry99/Mapping_Earthquakes/Mapping_GeoJSON_Points/Mapping_GeoJSON_Points/static/js/majorAirports.json";
 // Accessing the Toronto airline routes GeoJSON URL.
-let torontoData = "https://raw.githubusercontent.com/ethiry99/Mapping_Earthquakes/main/torontoRoutes.json";
+let torontoData = "https://github.com/ethiry99/Mapping_Earthquakes/blob/Mapping_GeoJSON_Linestrings/Mapping_GeoJSON_Linestrings/static/js/torontoRoutes.json";
 
 // Grabbing our GeoJSON data.
 //L.geoJSON(sanFranAirport).addTo(map);
@@ -97,7 +97,7 @@ let torontoData = "https://raw.githubusercontent.com/ethiry99/Mapping_Earthquake
 //   }).addTo(map);
 
   // Grabbing our GeoJSON data.
-d3.json(airportData).then(function(data) {
+d3.json(torontoData).then(function(data) {
     console.log(data);
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJson(data).addTo(map);
