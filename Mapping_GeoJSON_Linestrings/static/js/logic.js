@@ -79,13 +79,11 @@ L.control.layers(baseMaps).addTo(map);
 // Accessing the airport GeoJSON URL
 //let airportData = "https://raw.githubusercontent.com/ethiry99/Mapping_Earthquakes/Mapping_GeoJSON_Points/Mapping_GeoJSON_Points/static/js/majorAirports.json";
 // Accessing the Toronto airline routes GeoJSON URL.
-<<<<<<< HEAD
-let torontoData = "https://github.com/ethiry99/Mapping_Earthquakes/blob/main/Mapping_GeoJSON_Linestrings/static/js/torontoRoutes.json";
-https://github.com/ethiry99/Mapping_Earthquak
-=======
-let torontoData = "https://github.com/ethiry99/Mapping_Earthquakes/blob/Mapping_GeoJSON_Linestrings/Mapping_GeoJSON_Linestrings/static/js/torontoRoutes.json";
 
->>>>>>> 32b95237e6057f2606a697c4c0ab40eb36cfae41
+
+let torontoData = "https://github.com/ethiry99/Mapping_Earthquakes/blob/main/torontoRoutes.json";
+
+
 // Grabbing our GeoJSON data.
 //L.geoJSON(sanFranAirport).addTo(map);
 
